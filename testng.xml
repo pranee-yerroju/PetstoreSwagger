@@ -7,6 +7,9 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="api.Tests.userTests"/>
+      <class name="api.Tests.petTests"/>
+      <class name="api.Tests.storeTests"/>
+      <class name="api.Tests.DDTUserTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
