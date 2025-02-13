@@ -30,7 +30,7 @@ public class DDTUserTest {
 	}
 	
 	//read
-	@Test(priority=0, dataProvider="username",dataProviderClass=DataProviders.class)
+	@Test(priority=0, dataProvider="usernames",dataProviderClass=DataProviders.class)
 	public void testGetUser(String Username) {
 		
 		Response response=UserEndPoints.getUser(Username);
@@ -39,7 +39,7 @@ public class DDTUserTest {
 			
 	}
 	//update
-	@Test(priority=0, dataProvider="username",dataProviderClass=DataProviders.class)
+	@Test(priority=0, dataProvider="usernames",dataProviderClass=DataProviders.class)
 	public void testUpdateUser(String userID, String Username, String firstname, String lastname, String email, String password, String phone, String status) {
 		User userpayload=new User();
 		
@@ -59,7 +59,7 @@ public class DDTUserTest {
 		response1.then().log().body();
 	}
 	//delete
-	@Test(priority=0, dataProvider="username",dataProviderClass=DataProviders.class)
+	@Test(priority=0, dataProvider="usernames",dataProviderClass=DataProviders.class)
 	public void testDeleteUser(String Username) {
 		
 		Response response=UserEndPoints.deleteUser(Username);

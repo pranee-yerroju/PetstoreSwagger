@@ -17,7 +17,7 @@ public class PetEndPoints {
 				.post(Routes.pet_create_url);
 				return response;
 	}
-	public static Response get_pet(String petID) {
+	public static Response get_pet(int petID) {
 		Response response=given()
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
@@ -26,17 +26,16 @@ public class PetEndPoints {
 				.get(Routes.pet_get_url);
 				return response;
 	}
-	public static Response update_pet(String petID, Pet payload) {
+	public static Response update_pet(Pet payload) {
 		Response response=given()
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
-				.pathParam("petId", petID)
 				.body(payload)
 				.when()
 				.put(Routes.pet_update_url);
 				return response;
 	}
-	public static Response delete_pet(String petID) {
+	public static Response delete_pet(int petID) {
 		Response response=given()
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)

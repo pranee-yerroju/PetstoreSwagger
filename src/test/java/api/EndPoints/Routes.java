@@ -12,7 +12,7 @@ public class Routes {
 	public static String delete_url=base_url+"/user/{username}";
 	
 	//store
-	public static String store_create_url=base_url+"/store";
+	public static String store_create_url=base_url+"/store/order";
 	public static String store_get_url=base_url+"/store/order/{orderId}";
 	public static String store_update_url=base_url+"/store/order/{orderId}";
 	public static String store_delete_url=base_url+"/store/order/{orderId}";
@@ -20,6 +20,6 @@ public class Routes {
 	//pet
 	public static String pet_create_url=base_url+"/pet";
 	public static String pet_get_url=base_url+"/pet/{petId}";
-	public static String pet_update_url=base_url+"/pet/{petId}";
+	public static String pet_update_url=base_url+"/pet";
 	public static String pet_delete_url=base_url+"/pet/{petId}";
 }

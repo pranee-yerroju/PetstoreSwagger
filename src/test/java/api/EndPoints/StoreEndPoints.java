@@ -38,7 +38,7 @@ public class StoreEndPoints {
 		           .put(Routes.store_update_url);
 		  return response;
 	}
-	public static Response delete_Pet(String orderId) {
+	public static Response delete_order(String orderId) {
 		
 		  Response response=given()
 				  .contentType(ContentType.JSON)
